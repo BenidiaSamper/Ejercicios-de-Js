@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let base;
+        base = prompt("Ingrese un valor para la base del triángulo");
+        try{
+            if (!isNaN(base)){
+                let Altura;
+                Altura = prompt("Ingrese un valor para la altura del triángulo");
+                if(!isNaN(Altura)){
+                    let areaTriangulo = ((parseFloat(base)*parseFloat(Altura))/2);
+                    document.write("El área del triángulo es: " + areaTriangulo);
+                }else{
+                    document.write("El valor de la altura no es un número");
+                }
+            }else{
+                document.write("El valor de la base no es un número");
+            }
+        }catch(e){
+            document.write("Ha ocurrido un error");
+        }
+        
+    </script>
+</body>
+</html>

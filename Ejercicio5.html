@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1
+        num1 = prompt("Ingresa el primer número")
+        try {
+            if(!isNaN(num1)){
+                let num2;
+                num2 = prompt("Ingresa el segundo número")
+                if (!isNaN(num2)){
+                    document.write("Hola, el resultado es: ")
+                    document.write ((parseInt (num1) + parseInt (num2)) / parseInt (4))
+               }else{
+                    document.write("Ingrese solo números")
+                }
+            }else{
+                document.write("Ingrese solo números")
+            }
+        } catch (e) {
+            document.write("Ha ocurrido un error, vuelva a intentarlo en unos minutos");
+        }
+    </script>
+</body>
+</html>

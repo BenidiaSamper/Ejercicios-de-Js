@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1
+        num1 = prompt("Ingresa el primer número")
+        try {
+            if(!isNaN(num1)){
+                let num2
+                num2 = prompt("Ingresa el segundo número")
+                if (!isNaN(num2)){
+                    let num3
+                    num3 = prompt("Ingresa el tercer número")
+                    if (!isNaN(num3)){
+                        let num4
+                        num4 = prompt("Ingresa el cuarto número")
+                        if(!isNaN(num4)){
+                            let num5
+                            num5 = prompt("Ingresa el quinto número")
+                            if(!isNaN(num5)){
+                                let num6
+                                num6 = prompt("Ingresa el sexto número")
+                                if(!isNaN(num6)){
+                                document.write("Hola, el resultado es: ")
+                                document.write (((parseInt (num1) + parseInt (num2) +  parseInt (num3) +  parseInt (num4) +  parseInt (num5) +  parseInt (num6)) * parseInt (2)) / parseInt (5))
+
+                              }else{
+                                document.write("Ingrese solo números")
+                              }
+                            }else{
+                                document.write("Ingrese solo números")
+                            }
+
+                        }else{
+                            document.write("Ingrese solo números")
+                        }
+                    }else{
+                        document.write("Ingrese solo números")
+                    }
+                }else{
+                    document.write("Ingrese solo números")
+                }
+            }else{
+                document.write("Ingrese solo números")
+            }
+        } catch (e) {
+            document.write("Ha ocurrido un error, vuelva a intentarlo en unos minutos");
+        }
+    </script>
+</body>
+</html>
